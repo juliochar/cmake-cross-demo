@@ -10,3 +10,42 @@ no windows é necessário executar no powershell do visualstudio
 CAP02 - rodando em Windows - LINUX - MAc
 - sem erros
 
+Generators:
+msbuild
+mingw(gcc e g++)
+
+cmake --help
+
+pedindo ao cmake para gerar o build para MingW - make
+cmake -G "MinGW Makefiles" ..\source\
+gerar o executavel: mingw32-make
+
+usando ninja:
+cmake -G "Ninja" ..\source\
+gera toda a estrutura para usar o 'ninja' com o arquivo build.ninja sendo o principal para o ninja
+
+
+Windows:
+    - Visual Studio Project
+    - MIngW Project
+    - Ninja Project
+
+Linux:
+    - Unix Makefiles Project
+    - Ninja
+
+
+
+cmake --build caminho/para/build --target HelloBinary
+
+1) faça a preparação na pasta build -> #cmake ..\source\
+2) faça o comando direto pelo cmake que ele encontrará o generator adequado e fará o Target(binario)
+-> #cmake --build .
+
+com este comando ele vai ler os arquivos gerados na pasta build e vai aplicar o target usando o generator do sistema, seja MingW ou Msbuild
+o comando acima funciona para todos os 03 principais sistema - window - linux - mac
+
+com o target definido no CMakeList: pode-se informa na linha de comando:
+#cmake --build . --target HelloAppBinary
+
+

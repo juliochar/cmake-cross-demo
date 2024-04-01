@@ -14,7 +14,7 @@ int main() {
     int a{6};
     int b{6};
 
-    auto result = add(a, b)
+    auto result = add(a, b);
     std::cout<< "Resultado: " << result << std::endl;
     return 0;
 }

@@ -1,0 +1,12 @@
+- cap02 - criar a pasta build e gerar o executável a partir de:
+#cmake ../source/
+binário no linux e MAc: #make
+binário no windows: #msbuild .\HellpApp.sln
+
+o cmake detecta o sistema de 'build' do windows e gera o solution para visual studio de acordo com o compilador
+
+no windows é necessário executar no powershell do visualstudio
+
+CAP02 - rodando em Windows - LINUX - MAc
+- sem erros
+

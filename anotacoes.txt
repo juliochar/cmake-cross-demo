@@ -49,3 +49,13 @@ com o target definido no CMakeList: pode-se informa na linha de comando:
 #cmake --build . --target HelloAppBinary
 
 
+- definir o compilador pela linha de comando
+#cmake -GNinja -D CMAKE_CXX_COMPILER=g++ ..\source\
+
+
+- no CAP07 foi abordado STATIC library
+para 'gerar' sozinho a biblioca pelo cmake
+#cmake --build . --target logger
+
+pode-se gerar individualmente o target para verificar problemas
+dependendo do S.O. e compilador gera arquivos '.a' ou '.lib'

@@ -59,3 +59,4 @@ para 'gerar' sozinho a biblioca pelo cmake
 
 pode-se gerar individualmente o target para verificar problemas
 dependendo do S.O. e compilador gera arquivos '.a' ou '.lib'
+lib.
